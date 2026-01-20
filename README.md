@@ -35,7 +35,7 @@ git clone https://github.com/yourusername/bulk-email-ai-assistant.git
 cd bulk-email-ai-assistant
 ```
 
-### 1. Clone the repository
+### 2. Create a virtual environment
 ```bash
 python -m venv venv
 # macOS/Linux
@@ -44,25 +44,25 @@ source venv/bin/activate
 venv\Scripts\activate
 ```
 
-### 1. Clone the repository
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-### 1. Clone the repository
+### 4. Set environment variables in a .env file
 ```bash
 EMAIL_ADDRESS=your_email@example.com
 EMAIL_PASSWORD=your_email_password_or_app_password
 OPENAI_API_KEY=your_openai_api_key   # optional
 ```
 
-### 1. Clone the repository
+### 5. Prepare your recipient CSV (recipients.csv)
 ```bash
 name,email,city,price,company
 Arthur,arthur@example.com,Toronto,$35,Meta
 ```
 
-### 1. Clone the repository
+### 6. Run the script
 ```bash
 python script.py
 ```
@@ -75,13 +75,7 @@ python script.py
 - Fills in placeholders ({name}, {city}, {price}, {company})
 - Optional: Personalizes the message with OpenAI (requires API key)
 - Sends email via SMTP
-- Logs each email into email_log.csv with:
-- Timestamp
-- Recipient info
-- Template used
-- Subject line
-- Status (SENT / FAILED)
-- Error message (if any)
+- Logs each email into email_log.csv with: Timestamp , Recipient info, Template used, Subject line, Status (SENT / FAILED), Error message (if any)
 
 ---
 
@@ -111,8 +105,8 @@ EMAIL_SUBJECTS = {
 
 ## Optional AI Personalization 
 
-- Uncomment OpenAI code in script.py and set OPENAI_API_KEY in .env
-- AI will rewrite each email to sound friendly and professional
+- Comment OpenAI code in script.py and unset OPENAI_API_KEY in .env - if you don't need OpenAI API calls 
+- If choose with AI, it will rewrite each email to sound friendly and professional 
 
 ## Safety Tips
 
