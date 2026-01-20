@@ -1,0 +1,15 @@
+name,email,city,price,company
+Arthur,arthur@example.com,Toronto,$35,Meta
+Alice,alice@example.com,London,$50,Google
+Bob,bob@example.com,New York,$40,Amazon
+Clara,clara@example.com,Berlin,$45,Spotify
+Daniel,daniel@example.com,Sydney,$30,Canva
+Eva,eva@example.com,Paris,$55,Airbnb
+Frank,frank@example.com,Chicago,$25,Stripe
+Grace,grace@example.com,San Francisco,$60,OpenAI
+Henry,henry@example.com,Dublin,$38,HubSpot
+Ivy,ivy@example.com,Amsterdam,$42,Booking
+
+
+
+ 
