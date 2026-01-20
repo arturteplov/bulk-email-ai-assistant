@@ -15,18 +15,6 @@ A Python script to send bulk emails with dynamic templates, subject lines, and o
 
 ---
 
-## Project Structure
-project-root/
-│
-├── script.py # Main email sending script
-├── templates.py # Email templates with placeholders
-├── subjects.py # Subject line options
-├── recipients.csv # Example recipients (user can upload)
-├── requirements.txt # Python dependencies
-└── README.md # This file
-
----
-
 ## Setup Instructions
 
 ### 1. Clone the repository
@@ -105,8 +93,8 @@ EMAIL_SUBJECTS = {
 
 ## Optional AI Personalization 
 
-- Comment OpenAI code in script.py and unset OPENAI_API_KEY in .env - if you don't need OpenAI API calls 
-- If choose with AI, it will rewrite each email to sound friendly and professional 
+- If you don’t want to use OpenAI, simply comment out the OpenAI-related code in script.py and remove OPENAI_API_KEY from your .env file.
+- If enabled, AI will enhance each email, making it sound friendly, professional, and personalized.
 
 ## Safety Tips
 
