@@ -1,4 +1,4 @@
-# Bulk Email AI Assistant - cR0tor 
+# Bulk Email AI Assistant  
 
 A Python script to send bulk emails with dynamic templates, subject lines, and optional AI personalization. Includes structured CSV logging for tracking sent emails.
 
